@@ -36,11 +36,12 @@ img {
     max-width: 100%;
     display: block;
 }
-.contenedor {
+[class$="__contenedor"] {
     max-width: 120rem;
     margin: 0 auto;
     width: 90%;
 }
+
 
 /*-- header ---*/
 
@@ -70,12 +71,6 @@ img {
     .header {
         background-size: 130rem;
     }
-}
-
-.header__contenedor {
-    max-width: 120rem;
-    margin: 0 auto;
-    width: 90%;
 }
 
 @media (min-width: 768px) {
@@ -159,7 +154,31 @@ img {
 
 @media (min-width: 768px) {
     .header__imagen {
-        max-height: 40rem;
+        max-height: 60rem;
         margin: 0 auto;
+    }
+}
+
+/*--- main ---*/
+
+.nucleus {
+    margin-top: 2rem;
+}
+
+.nucleus__heading {
+     text-align: center;
+     margin-bottom: 5rem;
+ }
+
+.nucleus__grid {
+    display: flex;
+    flex-direction: column-reverse;
+}
+@media (min-width: 768px) {
+    .nucleus__grid {
+        display: grid;
+        grid-template-columns: 1fr 2fr;
+        column-gap: 5rem;
+        align-items: center;
     }
 }
