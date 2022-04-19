@@ -182,3 +182,49 @@ img {
         align-items: center;
     }
 }
+
+.listado__elemento {
+    background-color: var(--blanco);
+    box-shadow: 0px 0px 15px 3px #0000007c;
+    padding: 1rem;
+    margin-bottom: 3rem;
+    transition: transform 0.3s;
+    
+}
+.listado__elemento:hover {
+    transform: scale(1.1);
+}
+
+.listado__heading {
+    font-size: 3rem;
+    color: var(--primario);
+    margin: 0;
+}
+
+.listado__texto {
+    margin: 0;
+    font-size: 2rem;
+    text-align: justify;
+}
+
+/*--- Seguridad --- */
+
+.seguridad {
+    background-color: var(--primario);
+    padding: 10rem 0;
+}
+
+.seguridad__heading {
+    text-align: center;
+    color: var(--blanco);
+    margin-bottom: 5rem;
+}
+
+@media (min-width: 768px) {
+    .segurridad__grid {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        column-gap: 5rem;
+        align-items: center;
+    }
+}
